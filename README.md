@@ -54,6 +54,7 @@
 
 ### Добавление автомобиля
 **Запрос:**
+   ```http
    POST /cars
 
    Content-Type: application/json
