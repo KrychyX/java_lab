@@ -38,7 +38,7 @@
    
 3. Соберите проект с помощью Maven:
   ```bash
-   mvn clean install
+  mvn clean install
 
 4. Запустите проект:
   ```bash
