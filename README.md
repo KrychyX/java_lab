@@ -37,16 +37,16 @@
    cd java_lab
    
 3. Соберите проект с помощью Maven:
-  ```bash
-  mvn clean install
+   ```bash
+   mvn clean install
 
 4. Запустите проект:
-  ```bash
-  mvn spring-boot:run
+   ```bash
+   mvn spring-boot:run
 
 5. После запуска API будет доступен по адресу:
-  ```bash
-  http://localhost:8080
+   ```bash
+   http://localhost:8080
 
 ---
 
