@@ -56,8 +56,8 @@
 
 ### Добавление автомобиля
 **Запрос:**
-```bash
-POST /cars
+   ```bash
+   POST /cars
 Content-Type: application/json
 {
   "mark": "Toyota",
@@ -69,8 +69,8 @@ HTTP Status: 201 Created
 
 ### Получение списка автомобилей
 **Запрос:**
-```bash
-GET /cars
+   ```bash
+   GET /cars
 Ответ:
 [
   {
@@ -89,8 +89,8 @@ GET /cars
 
 ### Получение автомобиля по ID
 **Запрос:**
-```bash
-GET /cars/1
+   ```bash
+   GET /cars/1
 Ответ:
 {
   "id": 1,
@@ -101,8 +101,8 @@ GET /cars/1
 
 ### Обновление автомобиля
 **Запрос:**
-```bash
-PUT /cars/1
+   ```bash
+   PUT /cars/1
 Content-Type: application/json
 
 {
@@ -115,8 +115,8 @@ HTTP Status: 200 OK
 
 ### Удаление автомобиля
 **Запрос:**
-```bash
-DELETE /cars/1
+   ```bash
+   DELETE /cars/1
 Ответ:
 HTTP Status: 200 OK
 
