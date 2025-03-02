@@ -8,6 +8,8 @@ class LabaApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//java
 	}
+
 
 }
