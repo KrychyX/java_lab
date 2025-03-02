@@ -30,4 +30,77 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-репозиторий/автосалон.git
+   git clone https://github.com/KrychyX/java_lab.git
+
+2.Перейдите в директорию проекта:
+cd автосалон
+3.Соберите проект с помощью Maven:
+mvn clean install
+4.Запустите проект:
+mvn spring-boot:run
+5.После запуска API будет доступен по адресу:
+http://localhost:8080
+
+Примеры запросов
+Добавление автомобиля
+Запрос:
+
+POST /cars
+Content-Type: application/json
+
+{
+  "mark": "Toyota",
+  "speed": 200,
+  "year": 2022
+}
+Ответ:
+HTTP Status: 201 Created
+
+Получение списка автомобилей
+Запрос:
+GET /cars
+Ответ:
+[
+  {
+    "id": 1,
+    "mark": "Toyota",
+    "speed": 200,
+    "year": 2022
+  },
+  {
+    "id": 2,
+    "mark": "Honda",
+    "speed": 180,
+    "year": 2021
+  }
+]
+
+Получение автомобиля по ID
+Запрос:
+GET /cars/1
+Ответ:
+{
+  "id": 1,
+  "mark": "Toyota",
+  "speed": 200,
+  "year": 2022
+}
+
+Обновление автомобиля
+Запрос:
+PUT /cars/1
+Content-Type: application/json
+
+{
+  "mark": "Toyota",
+  "speed": 220,
+  "year": 2023
+}
+Ответ:
+HTTP Status: 200 OK
+
+Удаление автомобиля
+Запрос:
+DELETE /cars/1
+Ответ:
+HTTP Status: 200 OK
