@@ -53,77 +53,17 @@
 ## Примеры запросов
 
 ### Добавление автомобиля
+
 **Запрос:**
-   ```http
-   POST /cars
-
-   Content-Type: application/json
-   {
-     "mark": "Toyota",
-     "speed": 200,
-     "year": 2022
-   }
-
-**Ответ:**
-HTTP Status: 201 Created
-
-### Получение списка автомобилей
-**Запрос:**
-   ```bash
-   GET /cars
-
-Ответ:
-[
-  {
-    "id": 1,
-    "mark": "Toyota",
-    "speed": 200,
-    "year": 2022
-  },
-  {
-    "id": 2,
-    "mark": "Honda",
-    "speed": 180,
-    "year": 2021
-  }
-]
-
-### Получение автомобиля по ID
-**Запрос:**
-   ```bash
-   GET /cars/1
-
-Ответ:
-{
-  "id": 1,
-  "mark": "Toyota",
-  "speed": 200,
-  "year": 2022
-}
-
-### Обновление автомобиля
-**Запрос:**
-   ```bash
-   PUT /cars/1
-
+```http
+POST /cars
 Content-Type: application/json
 
 {
   "mark": "Toyota",
-  "speed": 220,
-  "year": 2023
+  "speed": 200,
+  "year": 2022
 }
-Ответ:
-HTTP Status: 200 OK
-
-### Удаление автомобиля
-**Запрос:**
-   ```bash
-   DELETE /cars/1
-
-Ответ:
-HTTP Status: 200 OK
-
 ---
 
 ### **Возможные улучшения**
