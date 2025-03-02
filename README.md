@@ -35,12 +35,15 @@
 2. Перейдите в директорию проекта:
    ```bash
    cd java_lab
+   
 3. Соберите проект с помощью Maven:
   ```bash
    mvn clean install
+
 4. Запустите проект:
    ```bash
    mvn spring-boot:run
+
 5. После запуска API будет доступен по адресу:
    ```bash
    http://localhost:8080
