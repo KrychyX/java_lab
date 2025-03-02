@@ -50,21 +50,20 @@
 
 ---
 
-### **Примеры запросов**
-
 ## Примеры запросов
 
 ### Добавление автомобиля
 **Запрос:**
    ```bash
-   POST /cars  
+   POST /cars
+   Content-Type: application/json
+   
+   {
+     "mark": "Toyota",
+     "speed": 200,
+     "year": 2022
+   }
 
-Content-Type: application/json
-{
-  "mark": "Toyota",
-  "speed": 200,
-  "year": 2022
-}
 Ответ:
 HTTP Status: 201 Created
 
