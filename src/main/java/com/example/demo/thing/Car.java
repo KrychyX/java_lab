@@ -1,13 +1,10 @@
 package com.example.demo.thing;
 
-import lombok.*;
 
-@Data
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-
+/**
+ * Класс, представляющий автомобиль.
+ * Содержит информацию о идентификаторе, скорости, годе выпуска и марке автомобиля.
+ */
 public class Car {
 
     private Integer id;

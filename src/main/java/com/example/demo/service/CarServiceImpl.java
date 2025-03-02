@@ -1,14 +1,17 @@
 package com.example.demo.service;
 
 import com.example.demo.thing.Car;
-import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
+import org.springframework.stereotype.Service;
 
+/**
+ * Реализация интерфейса {@link CarService}, предоставляющая методы для управления автомобилями.
+ * Использует внутреннюю {@link Map} для хранения данных об автомобилях.
+ */
 @Service
 public class CarServiceImpl implements CarService {
     private static final Map<Integer, Car> CAR_MAP = new HashMap<>();
@@ -39,7 +42,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public boolean updateCar(Car car, int id) {
-        if(CAR_MAP.containsKey(id)){
+        if (CAR_MAP.containsKey(id)) {
             car.setId(id);
             CAR_MAP.put(id, car);
             return true;
