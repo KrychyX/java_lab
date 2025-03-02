@@ -48,7 +48,7 @@ public class MainController {
                 : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @PutMapping(value ="/cars/{id}")
+    @PutMapping("/cars/{id}")
     public ResponseEntity<Car> updateCar(@PathVariable int id, @RequestBody Car car){
         final boolean exists = carService.getCar(id) != null;
 
@@ -57,7 +57,7 @@ public class MainController {
                 : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
     }
 
-    @DeleteMapping(value ="/cars/{id}")
+    @DeleteMapping("/cars/{id}")
     public ResponseEntity<Car> deleteCar(@PathVariable int id){
         final boolean deleted = carService.deleteCar(id);
 
