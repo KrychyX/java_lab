@@ -57,7 +57,7 @@
 ### Добавление автомобиля
 **Запрос:**
    ```bash
-   POST /cars
+   POST /cars  
 
 Content-Type: application/json
 {
