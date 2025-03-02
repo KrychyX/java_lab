@@ -48,14 +48,16 @@
    ```bash
    http://localhost:8080
 
+
 ---
 
+### Как это выглядит в Markdown:
+```markdown
 ## Примеры запросов
 
 ### Добавление автомобиля
-
 **Запрос:**
-```http
+```bash
 POST /cars
 Content-Type: application/json
 
@@ -64,6 +66,7 @@ Content-Type: application/json
   "speed": 200,
   "year": 2022
 }
+
 ---
 
 ### **Возможные улучшения**
